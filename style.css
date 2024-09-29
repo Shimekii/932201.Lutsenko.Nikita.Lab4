@@ -1,0 +1,142 @@
+body, html{
+    margin: 0;
+    background-color: #edeef0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+::selection{
+    color: green;
+    background-color: #d0d0d0;
+}
+
+header{
+    width: 100%;
+    height: 45px;
+    background-color: #507299;
+    margin-bottom: 15px;
+    position: static;
+}
+
+.container{
+    max-width: 900px;
+    margin: 0px auto;
+    padding: 0px;
+    display: flex;
+}
+
+.logo{
+    padding-top: 10px;
+}
+
+.nav-menu{
+    margin-top: 15px;
+    width: 200px;
+    display: block;
+}
+
+.nav-menu a{
+    display: block;
+    margin-bottom: 15px;
+    margin-right: 10px;
+    color: #2e549a;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.nav-menu a:hover{
+    background-color: #e1e5eb;
+}
+
+.content{
+    margin-top: 15px;
+    width: 430px;
+    border: 1px solid #d8d9db;
+    border-radius: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: justify;
+    background-color: white;
+}
+
+.content img{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.line{
+    width: calc(100% - 3px);
+    border: 2px solid #d8d9db;
+    margin-bottom: 5px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    color: #2e5473;
+}
+
+.information-block{
+    margin-left: auto;
+    margin-top: 15px;
+}
+
+.information{
+    position: sticky;
+    top: 15px;
+    width: 150px;
+    padding: 10px;
+    border: 1px solid #d8d9db;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.sd{
+    top: 165px;
+}
+
+.information span{
+    display: block;
+    background-color: #edeef0;
+    margin-top: 15px;
+}
+
+@media (max-width: 950px){
+    .logo{
+        position: relative;
+        left: 15%;
+    }
+    .container{
+        max-width: 460px;
+        display: block;
+    }
+    .content{
+        width: inherit;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .nav-menu{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .nav-menu a{
+        display: inline-block;
+        margin-bottom: 0;
+    }
+    .information-block{
+        display: none;
+    }
+}
+
+footer{
+    height: 25px;
+    text-align: center;
+    background-color: white;
+    margin-top: 10px;
+    padding-top: 5px;
+    color: #808080;
+}
